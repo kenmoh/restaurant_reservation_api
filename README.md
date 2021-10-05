@@ -2,7 +2,7 @@
 
 ## About the Application
 
-This is a Restaurant Reservation Application where users can register, login and make reservations
+This is a Restaurant Reservation Application where users can register, login and make reservations.
 There are three(3) types of users:
 
 1. Guest USers
