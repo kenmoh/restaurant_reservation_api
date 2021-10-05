@@ -1,5 +1,21 @@
 # Resturant Reservation App
 
+## About the Application
+
+This is a Restaurant Reservation Application where users can register, login and make reservations
+There are three(3) types of users:
+
+1. Guest USers
+1. Staff Users
+1. Admin Users
+
+The app is built with:
+
+1. FastAPI(Python web framework)
+1. Tortoise ORM
+1. aerich(Database migration tool for Tortoise ORM)
+1. PostgreSQL
+
 ### Endpoints Functionality of the application.
 
 | METHODS | ROUTES                               | FUNCTIONALITY             | ACCESS                |
