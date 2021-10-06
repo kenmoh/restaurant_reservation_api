@@ -105,7 +105,7 @@ async def reservation_details(reservation_id: str, Authorize: AuthJWT = Depends(
             status_code=status.HTTP_401_UNAUTHORIZED, detail='Access error!')
 
 
-@ reservations_router.get('/user_reservations')
+@reservations_router.get('/user_reservations')
 async def reservation_details(Authorize: AuthJWT = Depends()):
     '''
     This endpoint returns a single reservation details of a current logged in user
