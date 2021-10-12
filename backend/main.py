@@ -39,7 +39,7 @@ TORTOISE_ORM = {
     "connections": {"default": f'{DB_TYPE}://{DB_USER}:{PASSWORD}@{HOST}/{DB_NAME}'},
     "apps": {
         "models": {
-            "models": ["models.models", "aerich.models"],
+            "models": ["backent/models.models", "aerich.models"],
             "default_connection": "default",
         },
     },

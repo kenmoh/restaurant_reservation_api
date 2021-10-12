@@ -95,8 +95,7 @@ async def reservation_details(reservation_id: str, Authorize: AuthJWT = Depends(
 
     current_user = Authorize.get_jwt_subject()
     user = await User.get(email=current_user).first()
-    print(list(user))
-
+   
     if user.is_staff or user.is_admin:
         reservation = await Reservation.get(reservation_id=reservation_id)
         return reservation
