@@ -64,7 +64,8 @@ async def create_user(user: RegisterUserSchema):
 
 @auth_router.post('/login', status_code=status.HTTP_200_OK)
 async def login(user: LoginSchema, Authorize: AuthJWT = Depends()):
-    """Login
+    """
+    Login
 
     Args:
         user (LoginSchema): fields to login a user(username and password)
@@ -92,7 +93,8 @@ async def login(user: LoginSchema, Authorize: AuthJWT = Depends()):
 
 @auth_router.get('/users', response_model=List[UserSchema])
 async def list_users():
-    """All users
+    """
+    All users
 
     Returns:
         List: Return a list of registered users
@@ -103,7 +105,8 @@ async def list_users():
 
 @auth_router.get('/users/{user_id}', response_model=UserSchema, status_code=status.HTTP_200_OK)
 async def get_user(user_id: str,):
-    """Get single user by user id.
+    """
+    Get single user by user id.
 
     Args:
         user_id (str): User id.
